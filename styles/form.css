@@ -1,0 +1,110 @@
+
+body {
+    background-image: url(/images/purple-abstract.jpg);
+    display: flex;
+    justify-content: center;
+    max-width: 1400px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+    font-family: sans-serif;
+    color:indigo;
+    box-shadow: 1px 1px 4px indigo;
+}
+
+.label, .select__title, .checkbox-label, .button {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 10px;
+}
+
+.input-field {
+    height: 35px;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 24px;
+    border: 1px solid indigo;
+}
+
+.select {
+    padding: 15px;
+    
+}
+
+.select-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-label {
+    display: inline;
+    margin-bottom: 20px;
+}
+
+.checkbox, .checkbox-label, .select, .button {
+    cursor: pointer;
+}
+
+.input-field:hover, .select:hover, .checkbox-custom:hover {
+    background-color:rgba(253, 173, 75, 0.966);
+    border: 1px solid indigo;
+    color: indigo;
+}
+.input-field:focus, .select:focus, .checkbox-custom:focus {
+    background-color:papayawhip;
+    border: 1px solid indigo;
+    outline: none;
+}
+
+::placeholder {
+    color: indigo;
+}
+
+.checkbox-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button {
+    width: fit-content;
+    padding: 15px;
+    align-self: center;
+    background-color: rgba(253, 173, 75, 0.966);
+    border: none;
+    box-shadow: 1px 1px 4px indigo;
+    color: indigo;
+}
+
+.button:hover {
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+.checkbox {
+    opacity: 0;
+}
+
+.checkbox-custom {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid indigo;
+    border-radius: 5px;
+}
+
+.checkbox-custom:hover {
+    border: 1px solid indigo;
+    transform: scale(1.1);
+}
