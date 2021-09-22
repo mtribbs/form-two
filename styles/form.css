@@ -24,7 +24,7 @@ h1 {
     box-shadow: 1px 1px 4px indigo;
 }
 
-.label, .select__title, .checkbox-label, .button {
+.label, .select__title, .button {
     font-size: 18px;
     line-height: 24px;
     margin: 10px;
@@ -73,9 +73,16 @@ h1 {
 }
 
 .checkbox-label {
-    margin-bottom: 20px;
-    position: absolute;
-    display: inline;
+    display: inline-block;
+    position: relative;
+}
+
+.checkbox, .checkbox-custom, .checkbox-text {
+    display: inline-block;
+}
+
+.checkbox-text {
+    margin-left: 10px;
 }
 
 .checkbox-custom {
@@ -84,7 +91,7 @@ h1 {
     height: 15px;
     border: 1px solid indigo;
     border-radius: 5px;
-    top: 3px;
+    top: 15px;
     left: -2px;
 }
 
